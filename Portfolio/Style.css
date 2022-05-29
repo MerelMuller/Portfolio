@@ -1,0 +1,175 @@
+body {
+    font-family: Arial;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    color: #946c64;
+}
+.container {
+    position: relative;
+    text-align: center;
+    padding-top: 8%;
+}
+#myVideo {
+    object-fit: cover;
+    width: 80vw;
+    height: 80vh;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.content {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} 
+@keyframes fadeInAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 4;}
+}
+.navigation{
+    padding-top:3%;
+    padding-bottom:3%;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:1;
+}
+.navbar-right{
+    float:right;
+    padding-right:5%;
+}  
+.navbar-right a{
+    text-decoration:none;
+    padding:10px;
+    color: #946c64;
+    font-weight:900;
+}
+ .navbar-right a:hover{
+    text-decoration:underline;
+}
+.container_flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.about {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+}
+.card {
+    flex: 0 0 200px;
+    margin: 3%;
+    color: black;
+    box-shadow: 0 0 50px darkgrey;
+    height: 150px;
+    width: 300px;
+}
+.title {
+    text-align: center;
+} 
+.card_title img {
+    height: 24px;
+    width: auto;
+    padding-left: 5%;
+}
+.card_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card_title h3 {
+    flex-grow: 2;
+}
+.contact {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.portfolio_item .overlay {
+    background-color: #FAF9F6;
+    height: 150px;
+    width: 300px;
+    opacity: 0;
+    padding: 3%;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.portfolio_item:hover .overlay {
+    opacity: 1;
+}
+.starbucks {
+    background-image: url('Assets/Starbucks.png');
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+}
+.car {
+    background-image: url('Assets/Car.png');
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+.text_effect {
+    background-image: url('Assets/Text\ Effect.png');
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+.lbi {
+    background-image: url('Assets/LBI.png');
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+.coaching_space {
+    background-image: url('Assets/Coaching\ Space.png');
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+.card_text {
+    margin-top: 0;
+}
+.footer {
+    background-color: #946c64;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_footer {
+    color: black;
+    text-align: center;
+    padding-top: 2%;
+}
+.socials img {
+    height: 24px;
+}
+.socials a {
+    padding: 2%;
+}
+.spacer {
+    height: 10vh;
+}
+.tech_stack img {
+    height: 50px;
+}
